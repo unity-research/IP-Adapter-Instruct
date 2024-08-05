@@ -1,0 +1,7 @@
+diffusers==0.30.0.dev0
+einops
+numpy
+Pillow
+safetensors==0.3.3
+torch==2.3.1
+transformers==4.42.3
