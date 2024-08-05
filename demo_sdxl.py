@@ -45,7 +45,7 @@ pipe = StableDiffusionXLPipelineExtraCFG.from_pretrained(
     safety_checker=None
 )
 
-image = Image.open("./test_images/knight.png")
+image = Image.open("./test_images/river.png")
 image.resize((512, 512))
 
 ip_model = IPAdapterInstructSDXL(pipe, image_encoder_path, ip_ckpt, device,dtypein=torch.float16,num_tokens=16)
