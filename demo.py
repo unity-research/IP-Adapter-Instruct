@@ -8,7 +8,6 @@ import datetime
 from ip_adapter.pipeline_stable_diffusion_extra_cfg import StableDiffusionPipelineCFG
 
 from ip_adapter.ip_adapter_instruct import IPAdapterInstruct
-#from ip_adapter import IPAdapter
 
 base_model_path = "SG161222/Realistic_Vision_V4.0_noVAE"
 vae_model_path = "stabilityai/sd-vae-ft-mse"
