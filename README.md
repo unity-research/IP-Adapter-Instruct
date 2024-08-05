@@ -35,6 +35,33 @@ run either demo.py, demo_sdxl.py or demo_sd3_instrct.py
 
 ```
 
+The possible current queries for each model are (it doesn't have to be exactly these queries, just this is the list of trained tasks)
+
+```
+sd15
+"use everything from the image"
+"use the style"
+"use the colour"
+"use the pose"
+"use the composition"
+"use the face"
+"use the foreground" (beta)
+"use the background" (beta)
+"use the object"
+```
+
+```
+sdxl and sd3
+"use everything from the image"
+"use the style"
+"use the colour"
+"use the pose"
+"use the composition"
+"use the face"
+```
+
+The demo scripts currently sort out the specifics of the cfg and scale settings, for your own implementation you may want to allow more control over these, as a general rule of thumb, everything, style, colour and face work better with simple cfg, use three way cfg for the other tasks, you may need to lower the scale to get good results with these later instruction types.
+
 ## Citation
 
 WIP
