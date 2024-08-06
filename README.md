@@ -2,7 +2,7 @@
 
 <a href='https://unity-research.github.io/IP-Adapter-Instruct.github.io/'><img src='https://img.shields.io/badge/Project-Page-green'></a> 
 <a href=''><img src='https://img.shields.io/badge/Technique-Report-red'></a> 
-<a href=''><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a>
+<a href='https://huggingface.co/CiaraRowles/IP-Adapter-Instruct'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a>
 
 
 
@@ -27,7 +27,7 @@ How to use
 ```
 pip install -r requirements.txt
 
-download the models from here: INSERT HUGGINGFACE LINK
+download the models from here: https://huggingface.co/CiaraRowles/IP-Adapter-Instruct
 
 place them in the "models" folder
 
