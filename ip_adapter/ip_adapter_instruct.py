@@ -121,6 +121,7 @@ class IPAdapterInstruct(IPAdapter):
         num_inference_steps=30,
         width=512,
         height=512,
+        auto_scale=True,
         **kwargs,
     ):
         self.set_scale(scale)
@@ -203,7 +204,12 @@ class IPAdapterInstruct(IPAdapter):
         if "colour" in query:
             query = query.replace("colour","color")
             #llm disrespect generating the training queries ngl
-        
+        if auto_scale:
+            if "composition" in query or "pose" in query:
+                scale = 0.7
+            #else:
+            #    scale = 0.9
+        self.set_scale(scale)
         images = self.pipe(
             prompt_embeds=prompt_embeds,
             negative_prompt_embeds=negative_prompt_embeds,
