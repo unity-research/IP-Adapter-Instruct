@@ -13,15 +13,15 @@ from transformers import CLIPImageProcessor, CLIPVisionModelWithProjection,AutoI
 from .utils import is_torch2_available,get_generator
 
 #if is_torch2_available():
-from .attention_processor import (
-    AttnProcessor2_0 as AttnProcessor,
-)
-from .attention_processor import (
-    CNAttnProcessor2_0 as CNAttnProcessor,
-)
-from .attention_processor import (
-    IPAttnProcessor2_0 as IPAttnProcessor,
-)
+# from .attention_processor import (
+#     AttnProcessor2_0 as AttnProcessor,
+# )
+# from .attention_processor import (
+#     CNAttnProcessor2_0 as CNAttnProcessor,
+# )
+# from .attention_processor import (
+#     IPAttnProcessor2_0 as IPAttnProcessor,
+# )
 #else:
 #    from .attention_processor import AttnProcessor, CNAttnProcessor, IPAttnProcessor
 from .resampler_Instruct import ResamplerInstruct,MLP,ResamplerInstructBigger
