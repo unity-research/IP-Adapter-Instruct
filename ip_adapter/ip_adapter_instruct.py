@@ -206,7 +206,7 @@ class IPAdapterInstruct(IPAdapter):
             #llm disrespect generating the training queries ngl
         if auto_scale:
             if "composition" in query or "pose" in query:
-                scale = 0.7
+                scale = scale - 0.3
             #else:
             #    scale = 0.9
         self.set_scale(scale)
