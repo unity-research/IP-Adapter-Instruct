@@ -196,7 +196,7 @@ class IPAdapterInstruct(IPAdapter):
         generator = torch.Generator(self.device).manual_seed(seed) if seed is not None else None
 
         simple_cfg_mode = False
-        if "style" in query or "colour" in query or "everything" in query or "color" in query:
+        if "style" in query or "colour" in query or "everything" in query or "color" in query or "face" in query or "facial" in query or "colour" in query:
             simple_cfg_mode = True
 
         #replace colour with color
