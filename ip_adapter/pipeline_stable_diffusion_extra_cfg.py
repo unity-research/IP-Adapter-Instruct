@@ -18,7 +18,7 @@ import torch
 from packaging import version
 from transformers import CLIPImageProcessor, CLIPTextModel, CLIPTokenizer, CLIPVisionModelWithProjection
 
-from diffusers.callbacks import MultiPipelineCallbacks, PipelineCallback
+#from diffusers.callbacks import MultiPipelineCallbacks, PipelineCallback
 from diffusers.configuration_utils import FrozenDict
 from diffusers.image_processor import PipelineImageInput, VaeImageProcessor
 from diffusers.loaders import FromSingleFileMixin, IPAdapterMixin, LoraLoaderMixin, TextualInversionLoaderMixin
@@ -797,9 +797,7 @@ class StableDiffusionPipelineCFG(
         instruct_guidance_scale=0.0,
         simple_cfg_mode = False,
         clip_skip: Optional[int] = None,
-        callback_on_step_end: Optional[
-            Union[Callable[[int, int, Dict], None], PipelineCallback, MultiPipelineCallbacks]
-        ] = None,
+        callback_on_step_end = None,
         callback_on_step_end_tensor_inputs: List[str] = ["latents"],
         **kwargs,
     ):
@@ -905,8 +903,8 @@ class StableDiffusionPipelineCFG(
                 "Passing `callback_steps` as an input argument to `__call__` is deprecated, consider using `callback_on_step_end`",
             )
 
-        if isinstance(callback_on_step_end, (PipelineCallback, MultiPipelineCallbacks)):
-            callback_on_step_end_tensor_inputs = callback_on_step_end.tensor_inputs
+        #if isinstance(callback_on_step_end, (PipelineCallback, MultiPipelineCallbacks)):
+        #    callback_on_step_end_tensor_inputs = callback_on_step_end.tensor_inputs
 
         # 0. Default height and width to unet
         height = height or self.unet.config.sample_size * self.vae_scale_factor
@@ -924,7 +922,7 @@ class StableDiffusionPipelineCFG(
             negative_prompt_embeds,
             None,
             None,
-            callback_on_step_end_tensor_inputs,
+       #     callback_on_step_end_tensor_inputs,
         )
 
         self._guidance_scale = guidance_scale
