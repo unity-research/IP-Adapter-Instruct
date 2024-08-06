@@ -32,7 +32,7 @@ download the models from here: https://huggingface.co/CiaraRowles/IP-Adapter-Ins
 
 place them in the "models" folder
 
-run either demo.py, demo_sdxl.py or demo_sd3_instrct.py 
+run either demo.py, demo_sdxl.py or demo_sd3_instruct.py 
 
 ```
 
