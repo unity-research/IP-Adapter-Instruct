@@ -2,7 +2,7 @@
 name = "ip-adapter-instruct"
 version = "0.1.0"
 description = "IP Adapter Instruct: Resolving Ambiguity in Image-based Conditioning using Instruct Prompts"
-authors = ["Rowles, Ciara", "Vainer, Shimon", "Kutsy, Konstantin", "De Nigris, Dante", "Elizarov,Slava","Donn\'e, Simon"]
+authors = ["Rowles, Ciara", "Vainer, Shimon", "Kutsy, Konstantin", "De Nigris, Dante", "Elizarov,Slava", "Donne, Simon"]
 license = "Apache-2.0"
 readme = "README.md"
 packages = [{ include = "ip_adapter" }]
