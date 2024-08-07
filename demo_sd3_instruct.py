@@ -10,7 +10,7 @@ from ip_adapter.ip_adapter_instruct import IPAdapter_sd3_Instruct
 from ip_adapter.pipeline_stable_diffusion_sd3_extra_cfg import StableDiffusion3PipelineExtraCFG
 base_model_path = "stabilityai/stable-diffusion-3-medium-diffusers"
 image_encoder_path = "laion/CLIP-ViT-H-14-laion2B-s32B-b79K"
-ip_ckpt = r'models/model_sd3_instruct_7_70000.bin'
+ip_ckpt = r'models/ip-adapter-instruct-sd3.bin'
 device = "cuda"
 
 def image_grid(imgs, rows, cols):
