@@ -12,8 +12,7 @@ from ip_adapter.ip_adapter_instruct import IPAdapterInstruct
 base_model_path = "SG161222/Realistic_Vision_V4.0_noVAE"
 vae_model_path = "stabilityai/sd-vae-ft-mse"
 image_encoder_path = "laion/CLIP-ViT-H-14-laion2B-s32B-b79K"
-ip_ckpt = "models/model_12_40000.bin"
-#ip_ckpt = "models/ip-adapter-plus_sd15.bin"
+ip_ckpt = "models/ip-adapter-instruct-sd15.bin"
 device = "cuda"
 
 def image_grid(imgs, rows, cols):
