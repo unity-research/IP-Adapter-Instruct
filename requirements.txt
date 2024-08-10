@@ -1,4 +1,4 @@
-diffusers==0.30.0.dev0
+diffusers===0.29.2
 einops
 numpy
 Pillow
